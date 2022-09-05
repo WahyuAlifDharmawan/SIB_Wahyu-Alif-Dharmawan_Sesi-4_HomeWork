@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './komponen/Navbar';
+import Header from './komponen/Header.jsx';
+import Konten from './komponen/Konten';
+import AboutMeet from './komponen/AboutMeet';
+import Member from './komponen/Member';
+import PastMeet from './komponen/PastMeet';
+import Footer from './komponen/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Navbar />
+      <Header />
+      <Konten />
+      <AboutMeet />
+      <Member />
+      <PastMeet />
+      <Footer />
     </div>
+    
   );
 }
 
